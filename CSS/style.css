@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg: #fff;
+    --orange-col: rgb(248, 76, 24);
+    --blue-col: rgb(16, 16, 51);
+}
+
+/* header starts */
+.icons i {
+    color: var(--orange-col);
+    font-size: 18px;
+}
+
+/* banner starts */
+#banner {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+
+}
+
+#banner .shadow {
+    background-color: rgba(43, 47, 52, 0.537);
+}
+
+#banner .container-lg {
+    padding-bottom: 45px !important;
+}
+
+h1 {
+    max-width: 500px !important;
+    padding-top: 80px;
+    font-size: 45px !important;
+}
+
+#banner p {
+    max-width: 500px;
+    padding: 25px 0;
+}
+
+#banner button {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: rgb(248, 76, 24);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* about us sec starts */
+#about-us .container-lg {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#about-us .row {
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about-us .row button,
+.card button {
+    margin-top: 10px;
+    background-color: var(--main-bg);
+    border: 2px solid var(--blue-col);
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    color: var(--blue-col);
+}
+
+.image-sec img {
+    width: 100%;
+}
+
+/* quotation sec starts  */
+#quote {
+    background-color: var(--blue-col);
+
+}
+
+#quote .container-lg {
+    padding: 60px 90px !important;
+}
+
+#quote .container-lg p:nth-child(1) {
+    color: var(--main-bg);
+    text-align: center;
+    font-size: 20px;
+}
+
+#quote .container-lg p:nth-last-of-type(1) {
+    color: rgb(181, 179, 179);
+    text-align: center;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+/* cards sec starts */
+#cards {
+    background-color: var(--main-bg);
+}
+
+#cards .container-lg {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.col-lg-4 {
+    cursor: pointer;
+    padding: 15px 20px;
+}
+
+#cards .row .card-img {
+    background-repeat: no-repeat;
+    height: 350px;
+}
+
+#cards .row .card-text {
+    width: 100%;
+}
+
+.col-lg-4 h3 {
+    font-size: 28px;
+    padding-top: 25px;
+}
+
+.col-lg-4 button {
+    margin-top: 20px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    background-color: var(--main-bg);
+}
+
+.col-lg-4:hover {
+    transform: scale(1.02);
+    transition: transform 0.8s;
+    box-shadow: 2px 3px 8px 10px rgba(223, 221, 221, 0.84);
+}
+
+/* contact sec starts */
+#contact {
+    background-color: var(--blue-col);
+    margin-top: 30px;
+}
+
+#contact .container-lg {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#contact .title-sec h4 {
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--main-bg);
+}
+
+#contact .title-sec p {
+    color: rgb(181, 179, 179);
+    text-align: left;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.form-sec form {
+    width: 100%;
+}
+
+.form-sec .top-fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.form-sec .top-fields div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-sec .top-fields div label,
+.message-field label {
+    color: rgb(181, 179, 179);
+}
+
+.form-sec .top-fields div input {
+    width: 95%;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgba(49, 47, 47, 0.689);
+}
+
+.form-sec .message-field {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-sec .message-field textarea {
+    width: 98%;
+    height: 150px;
+    resize: none;
+    border: none;
+    border-radius: 2px;
+    background-color: rgba(49, 47, 47, 0.689);
+}
+
+/* media queries */
+@media screen and (max-width: 576px) {
+    .navbar-collapse {
+        text-align: center;
+        margin-right: 0px !important;
+    }
+
+    header .icons {
+        padding-top: 15px;
+        padding-bottom: 10px;
+        justify-content: center;
+    }
+
+    /* banner sec */
+
+    #banner {
+        background-position: center !important;
+    }
+
+    #banner .container-lg {
+        padding-bottom: 0px !important;
+    }
+
+    #banner .container-lg h1 {
+        width: auto;
+        font-size: 30px !important;
+        padding-top: 20px;
+    }
+
+    #banner .container-lg p {
+        width: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #banner .container-lg button {
+        font-size: 16px;
+    }
+
+    /* about us sec */
+    #about-us .container-lg {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    #about-us .container-lg .text-sec {
+        padding-right: 0px !important;
+    }
+
+    /* quote us sec */
+    #quote .container-lg {
+        padding: 30px 20px !important;
+    }
+
+    /* cards us sec */
+    #cards .container-lg {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .col-lg-4:hover {
+        transform: scale(0.95);
+        transition: transform 0.8s;
+        box-shadow: 2px 3px 8px 10px rgba(223, 221, 221, 0.84);
+    }
+
+    #cards .justify-content-between {
+        gap: 15px;
+    }
+
+    /* contact us sec */
+    #contact .container-lg {
+        padding-top: 30px;
+
+    }
+
+    /* footer sec */
+    footer .row {
+        text-align: center;
+    }
+
+    footer .row> :nth-child(2) {
+        justify-content: center !important;
+        align-items: center;
+        padding-bottom: 15px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+    .navbar-collapse {
+        text-align: center;
+        margin-right: 0px !important;
+    }
+
+    header .icons {
+        padding-top: 15px;
+        padding-bottom: 10px;
+        justify-content: center;
+    }
+
+    /* banner sec */
+    #banner {
+        background-position: center !important;
+    }
+
+    #banner .container-lg h1 {
+        width: 100% !important;
+    }
+
+    #banner .container-lg p {
+        width: 100% !important;
+    }
+
+    /* quote us sec */
+    #quote .container-lg {
+        padding: 30px !important;
+    }
+
+    /* cards sec */
+    #cards .justify-content-between {
+        padding: 30px;
+        gap: 20px;
+    }
+
+    #cards .card-img {
+        height: 380px !important;
+    }
+
+    .col-lg-4:hover {
+        transform: scale(0.95);
+        transition: transform 0.8s;
+        box-shadow: 2px 3px 8px 10px rgba(223, 221, 221, 0.84);
+    }
+
+    #cards .px-md-5 {
+        padding: 2rem 3rem !important;
+    }
+
+}
+
+@media (min-width: 786px) and (max-width: 992px) {}
